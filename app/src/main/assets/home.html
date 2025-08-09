@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Refer to app/src/main/java/com/ctxone/chetaengineslotv2/HomeActivity.java for Android logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Restore previously selected option
+            const savedOption = localStorage.getItem('selectedOption');
+            if (savedOption) {
+                const radio = document.querySelector(`input[name="selectedOption"][value="${savedOption}"]`);
+                if (radio) {
+                    radio.checked = true;
+                }
+            }
+            // Save option when changed
+            document.querySelectorAll('input[name="selectedOption"]').forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    localStorage.setItem('selectedOption', e.target.value);
+                });
+            });
+            // Button action
+            document.getElementById('aktifk').addEventListener('click', () => {
+                const selected = document.querySelector('input[name="selectedOption"]:checked');
+                if (selected) {
+                    localStorage.setItem('selectedOption', selected.value);
+                }
+                window.location.href = 'AutoSpin.html';
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Pilih Opsi</h1>
+    <label><input type="radio" name="selectedOption" value="Option1" /> Option 1</label><br />
+    <label><input type="radio" name="selectedOption" value="Option2" /> Option 2</label><br />
+    <button id="aktifk">Aktifkan</button>
+</body>
+</html>

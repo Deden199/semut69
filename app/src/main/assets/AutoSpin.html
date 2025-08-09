@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoSpin</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedOption = localStorage.getItem('selectedOption');
+            const display = document.getElementById('selected');
+            display.textContent = savedOption ? savedOption : 'No option selected';
+        });
+    </script>
+</head>
+<body>
+    <h1>AutoSpin Page</h1>
+    <p>Selected option: <span id="selected"></span></p>
+    <a href="home.html">Back</a>
+</body>
+</html>

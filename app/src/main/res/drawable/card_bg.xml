@@ -1,0 +1,5 @@
+<!-- res/drawable/card_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1A1919" /> <!-- Warna latar belakang -->
+    <corners android:radius="16dp" /> <!-- Sudut dengan radius 16dp -->
+</shape>

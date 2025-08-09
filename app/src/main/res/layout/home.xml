@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mlll"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#0B0D0E">
+    <ImageView
+        android:id="@+id/tips"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:id="@+id/wrb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:id="@+id/banneratas"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="200dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/colorPickerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textSize="20dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/logobull"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="400dp">
+    </ImageView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#BC11100D"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="AI PRAGMATIC" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"/> <!-- Adjust color as needed -->
+
+                <!-- Second radio button -->
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="AUTO PGSOFT" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"/> <!-- Adjust color as needed -->
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="ALL GAME" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/aktifk"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="ACTIVATE"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#FFFFFF"
+        app:rippleColor="#213E01">
+    </Button>
+    <Button
+        android:id="@+id/komunitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="KOMUNITAS"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#C3002166"
+        app:rippleColor="#B3FE62">
+    </Button>
+</LinearLayout>
+</LinearLayout>

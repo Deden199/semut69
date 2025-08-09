@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192253325858",
+    "project_id": "semut-b46da",
+    "storage_bucket": "semut-b46da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192253325858:android:0889c71efbcfe97ff9107b",
+        "android_client_info": {
+          "package_name": "com.dzcyberstacks.semut69"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_NrJXwQQ_JbWIg7a2y3SLiIKmlv2zDdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

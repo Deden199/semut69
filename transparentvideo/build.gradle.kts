@@ -1,15 +1,16 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
     namespace = "com.tritus.transparentvideo"
-    compileSdk = 33
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 35
     }
 
     compileOptions {
@@ -23,17 +24,14 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.2"
-    }
 }
 
 dependencies {
-    implementation("androidx.annotation:annotation:1.6.0")
-    implementation("androidx.compose.foundation:foundation:1.4.3")
-    implementation("androidx.compose.runtime:runtime:1.4.3")
-    implementation("androidx.compose.ui:ui:1.4.3")
-    implementation("androidx.lifecycle:lifecycle-common:2.6.1")
+    implementation("androidx.annotation:annotation:1.9.1")
+    implementation("androidx.compose.foundation:foundation:1.8.3")
+    implementation("androidx.compose.runtime:runtime:1.8.3")
+    implementation("androidx.compose.ui:ui:1.8.3")
+    implementation("androidx.lifecycle:lifecycle-common:2.9.2")
 
-    implementation("com.google.android.exoplayer:exoplayer-core:2.18.6")
+    implementation("com.google.android.exoplayer:exoplayer-core:2.19.1")
 }
